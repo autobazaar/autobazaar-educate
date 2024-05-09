@@ -50,7 +50,7 @@ const BreadcrumbSix = ({ title, page }) => {
           position: "relative",
           bottom: "10rem",
 
-          zIndex: "999",
+          zIndex: "10",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-around",

@@ -16,7 +16,7 @@ const KnowledgeBasedListArea = () => {
         className="containe"
         style={{
           borderRadius: "10px",
-          padding: "8rem",
+          padding: "0rem 8rem",
           width: "100vw",
         }}
       >
