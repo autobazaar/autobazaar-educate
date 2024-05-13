@@ -3,7 +3,7 @@ import React from "react";
 import SEO from "../../components/seo";
 import { blog_data } from "../../data";
 import { Wrapper } from "../../layout";
-import BlogDetailsMain from "../../components/blog-list";
+import BlogDetailsMain from "../../components/blog-details";
 
 const DynamicBlogDetails = () => {
   const router = useRouter();

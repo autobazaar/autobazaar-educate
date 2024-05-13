@@ -15,27 +15,65 @@ const BreadcrumbThree = ({ title, subtitle }) => {
         position: "relative",
       }}
     >
-      <div className="container">
+      {/* Background Image */}
+      <div
+        className="background-image"
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100vh",
+          zIndex: 0, // Ensure it's behind other elements
+          backgroundImage: "url('/assets/images/bg/blog-details-bg.jpeg')", // Add your background image URL here
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      ></div>
+
+      {/* Overlay */}
+      <div
+        className="overlay"
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100vh",
+          backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent black color
+          zIndex: 1, // Ensure it's above other elements
+        }}
+      ></div>
+
+      <div className="container" style={{ zIndex: 999 }}>
         <div className="breadcrumb-inner">
           <div className="page-title">
-            <h1 className="title">{title}</h1>
+            <h1 style={{ color: "#FFFFFF" }} className="title">
+              {title}
+            </h1>
           </div>
           <ul className="edu-breadcrumb">
             <li className="breadcrumb-item">
               <Link href="/">
-                <a>Home</a>
+                <a style={{ color: "#FFFFFF" }}>Home</a>
               </Link>
             </li>
             <li className="separator">
-              <i className="icon-angle-right"></i>
+              <i style={{ color: "#FFFFFF" }} className="icon-angle-right"></i>
             </li>
             <li className="breadcrumb-item">
-              <a href="#">Pages</a>
+              <a style={{ color: "#FFFFFF" }} href="#">
+                Pages
+              </a>
             </li>
             <li className="separator">
-              <i className="icon-angle-right"></i>
+              <i style={{ color: "#FFFFFF" }} className="icon-angle-right"></i>
             </li>
-            <li className="breadcrumb-item active" aria-current="page">
+            <li
+              style={{ color: "#FFFFFF" }}
+              className="breadcrumb-item active"
+              aria-current="page"
+            >
               {subtitle}
             </li>
           </ul>
@@ -80,7 +118,6 @@ const BreadcrumbThree = ({ title, subtitle }) => {
         style={{
           position: "absolute",
           bottom: "-10.2rem",
-
           zIndex: "999",
         }}
         className="rotateit"

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
 import menu_data from "../menu-data";
 import Link from "next/link";
@@ -11,7 +11,7 @@ const MainMenu = () => {
       {menu_data.map((menu, i) => (
         <li key={i}>
           <Link href={`${menu.link}`}>
-            <a className={router.pathname === menu.link ? "active" : ""}>
+            <a className={router.pathname === menu.link ? "activee" : ""}>
               {menu.title}
               {router.pathname === menu.link && (
                 <div className="active-underline" />
@@ -20,6 +20,12 @@ const MainMenu = () => {
           </Link>
         </li>
       ))}
+      <style jsx>{`
+        .activee,
+        .activee:hover {
+          color: orange !important;
+        }
+      `}</style>
     </ul>
   );
 };
