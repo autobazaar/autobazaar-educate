@@ -5,13 +5,22 @@ import Link from "next/link";
 
 const MainMenu = () => {
   const router = useRouter();
+  const num = 32;
 
   return (
     <ul className="mainmenu">
       {menu_data.map((menu, i) => (
         <li key={i}>
           <Link href={`${menu.link}`}>
-            <a className={router.pathname === menu.link ? "activee" : ""}>
+            <a
+              className={
+                router.pathname === menu.link ||
+                (router.pathname === `blog-details/${num}` &&
+                  menu.link === "/blog")
+                  ? "activee"
+                  : ""
+              }
+            >
               {menu.title}
               {router.pathname === menu.link && (
                 <div className="active-underline" />
@@ -23,7 +32,7 @@ const MainMenu = () => {
       <style jsx>{`
         .activee,
         .activee:hover {
-          color: orange !important;
+          color: #ffa51f !important;
         }
       `}</style>
     </ul>
