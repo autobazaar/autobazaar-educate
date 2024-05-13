@@ -121,7 +121,7 @@ const HeroSlider = () => {
                     qui officia deserunt mollit
                   </p>
                   <div className="banner-btn">
-                    <Link href="">
+                    <Link href="/blog-details">
                       <a
                         className="edu-btn btn-secondary"
                         style={{

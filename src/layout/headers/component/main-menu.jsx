@@ -14,7 +14,10 @@ const MainMenu = () => {
             <a
               className={
                 router.pathname === menu.link ||
-                (router.pathname === "/blog-details" && menu.title === "Blog")
+                (router.pathname === "/blog-details" &&
+                  menu.title === "Blog") ||
+                (router.pathname === "/blog-details/32" &&
+                  menu.title === "Blog")
                   ? "activee"
                   : ""
               }
