@@ -5,7 +5,6 @@ import Link from "next/link";
 
 const MainMenu = () => {
   const router = useRouter();
-  const num = 32;
 
   return (
     <ul className="mainmenu">
@@ -15,8 +14,7 @@ const MainMenu = () => {
             <a
               className={
                 router.pathname === menu.link ||
-                (router.pathname === `blog-details/${num}` &&
-                  menu.link === "/blog")
+                (router.pathname === "/blog-details" && menu.title === "Blog")
                   ? "activee"
                   : ""
               }
