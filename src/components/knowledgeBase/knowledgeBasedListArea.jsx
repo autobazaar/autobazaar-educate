@@ -88,15 +88,17 @@ const KnowledgeBasedListArea = () => {
                 }}
               >
                 <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
-                <p
+                <Link
+                  href={`/knowledgebase/1`}
                   style={{
                     fontSize: "1.5rem",
                     height: "0rem",
                     color: "#2c5cc5",
+                    cursor: "pointer",
                   }}
                 >
                   Catalogue
-                </p>
+                </Link>
               </div>
             </div>
             <div style={{ marginLeft: "3rem" }}>
@@ -110,15 +112,17 @@ const KnowledgeBasedListArea = () => {
                 }}
               >
                 <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
-                <p
+                <Link
+                  href={`/knowledgebase/1`}
                   style={{
                     fontSize: "1.5rem",
                     height: "0rem",
                     color: "#2c5cc5",
+                    cursor: "pointer",
                   }}
                 >
                   Catalogue
-                </p>
+                </Link>
               </div>
             </div>
             <div style={{ marginLeft: "3rem" }}>
@@ -132,15 +136,17 @@ const KnowledgeBasedListArea = () => {
                 }}
               >
                 <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
-                <p
+                <Link
+                  href={`/knowledgebase/2`}
                   style={{
                     fontSize: "1.5rem",
                     height: "0rem",
                     color: "#2c5cc5",
+                    cursor: "pointer",
                   }}
                 >
                   Catalogue
-                </p>
+                </Link>
               </div>
             </div>
           </div>
@@ -174,15 +180,17 @@ const KnowledgeBasedListArea = () => {
                 }}
               >
                 <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
-                <p
+                <Link
+                  href={`/knowledgebase/3`}
                   style={{
                     fontSize: "1.5rem",
                     height: "0rem",
                     color: "#2c5cc5",
+                    cursor: "pointer",
                   }}
                 >
                   Catalogue
-                </p>
+                </Link>
               </div>
             </div>
             <div style={{ marginLeft: "3rem" }}>
@@ -196,15 +204,17 @@ const KnowledgeBasedListArea = () => {
                 }}
               >
                 <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
-                <p
+                <Link
+                  href={`/knowledgebase/4`}
                   style={{
                     fontSize: "1.5rem",
                     height: "0rem",
                     color: "#2c5cc5",
+                    cursor: "pointer",
                   }}
                 >
                   Catalogue
-                </p>
+                </Link>
               </div>
             </div>
             <div style={{ marginLeft: "3rem" }}>
@@ -218,101 +228,17 @@ const KnowledgeBasedListArea = () => {
                 }}
               >
                 <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
-                <p
+                <Link
+                  href={`/knowledgebase/5`}
                   style={{
                     fontSize: "1.5rem",
                     height: "0rem",
                     color: "#2c5cc5",
+                    cursor: "pointer",
                   }}
                 >
                   Catalogue
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{
-              width: "33.33%",
-
-              borderBottom: "0.1px solid gray",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "flex-start",
-                gap: "10px",
-                padding: "1.5rem",
-              }}
-            >
-              <GoFileDirectory style={{ height: "30px", width: "30px" }} />
-              <h6 style={{ fontSize: "2rem", height: "1rem" }}>Catalogue</h6>
-            </div>
-            <div style={{ marginLeft: "3rem" }}>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "flex-start",
-                  gap: "10px",
-                  padding: "1rem",
-                }}
-              >
-                <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
-                <p
-                  style={{
-                    fontSize: "1.5rem",
-                    height: "0rem",
-                    color: "#2c5cc5",
-                  }}
-                >
-                  Catalogue
-                </p>
-              </div>
-            </div>
-            <div style={{ marginLeft: "3rem" }}>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "flex-start",
-                  gap: "10px",
-                  padding: "1rem",
-                }}
-              >
-                <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
-                <p
-                  style={{
-                    fontSize: "1.5rem",
-                    height: "0rem",
-                    color: "#2c5cc5",
-                  }}
-                >
-                  Catalogue
-                </p>
-              </div>
-            </div>
-            <div style={{ marginLeft: "3rem" }}>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "flex-start",
-                  gap: "10px",
-                  padding: "1rem",
-                }}
-              >
-                <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
-                <p
-                  style={{
-                    fontSize: "1.5rem",
-                    height: "0rem",
-                    color: "#2c5cc5",
-                  }}
-                >
-                  Catalogue
-                </p>
+                </Link>
               </div>
             </div>
           </div>
@@ -346,15 +272,17 @@ const KnowledgeBasedListArea = () => {
                 }}
               >
                 <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
-                <p
+                <Link
+                  href={`/knowledgebase/6`}
                   style={{
                     fontSize: "1.5rem",
                     height: "0rem",
                     color: "#2c5cc5",
+                    cursor: "pointer",
                   }}
                 >
                   Catalogue
-                </p>
+                </Link>
               </div>
             </div>
             <div style={{ marginLeft: "3rem" }}>
@@ -368,15 +296,17 @@ const KnowledgeBasedListArea = () => {
                 }}
               >
                 <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
-                <p
+                <Link
+                  href={`/knowledgebase/7`}
                   style={{
                     fontSize: "1.5rem",
                     height: "0rem",
                     color: "#2c5cc5",
+                    cursor: "pointer",
                   }}
                 >
                   Catalogue
-                </p>
+                </Link>
               </div>
             </div>
             <div style={{ marginLeft: "3rem" }}>
@@ -390,15 +320,17 @@ const KnowledgeBasedListArea = () => {
                 }}
               >
                 <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
-                <p
+                <Link
+                  href={`/knowledgebase/8`}
                   style={{
                     fontSize: "1.5rem",
                     height: "0rem",
                     color: "#2c5cc5",
+                    cursor: "pointer",
                   }}
                 >
                   Catalogue
-                </p>
+                </Link>
               </div>
             </div>
           </div>
@@ -432,15 +364,17 @@ const KnowledgeBasedListArea = () => {
                 }}
               >
                 <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
-                <p
+                <Link
+                  href={`/knowledgebase/9`}
                   style={{
                     fontSize: "1.5rem",
                     height: "0rem",
                     color: "#2c5cc5",
+                    cursor: "pointer",
                   }}
                 >
                   Catalogue
-                </p>
+                </Link>
               </div>
             </div>
             <div style={{ marginLeft: "3rem" }}>
@@ -454,15 +388,17 @@ const KnowledgeBasedListArea = () => {
                 }}
               >
                 <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
-                <p
+                <Link
+                  href={`/knowledgebase/1`}
                   style={{
                     fontSize: "1.5rem",
                     height: "0rem",
                     color: "#2c5cc5",
+                    cursor: "pointer",
                   }}
                 >
                   Catalogue
-                </p>
+                </Link>
               </div>
             </div>
             <div style={{ marginLeft: "3rem" }}>
@@ -476,15 +412,109 @@ const KnowledgeBasedListArea = () => {
                 }}
               >
                 <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
-                <p
+                <Link
+                  href={`/knowledgebase/1`}
                   style={{
                     fontSize: "1.5rem",
                     height: "0rem",
                     color: "#2c5cc5",
+                    cursor: "pointer",
                   }}
                 >
                   Catalogue
-                </p>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{
+              width: "33.33%",
+
+              borderBottom: "0.1px solid gray",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "flex-start",
+                gap: "10px",
+                padding: "1.5rem",
+              }}
+            >
+              <GoFileDirectory style={{ height: "30px", width: "30px" }} />
+              <h6 style={{ fontSize: "2rem", height: "1rem" }}>Catalogue</h6>
+            </div>
+            <div style={{ marginLeft: "3rem" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "10px",
+                  padding: "1rem",
+                }}
+              >
+                <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
+                <Link
+                  href={`/knowledgebase/1`}
+                  style={{
+                    fontSize: "1.5rem",
+                    height: "0rem",
+                    color: "#2c5cc5",
+                    cursor: "pointer",
+                  }}
+                >
+                  Catalogue
+                </Link>
+              </div>
+            </div>
+            <div style={{ marginLeft: "3rem" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "10px",
+                  padding: "1rem",
+                }}
+              >
+                <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
+                <Link
+                  href={`/knowledgebase/1`}
+                  style={{
+                    fontSize: "1.5rem",
+                    height: "0rem",
+                    color: "#2c5cc5",
+                    cursor: "pointer",
+                  }}
+                >
+                  Catalogue
+                </Link>
+              </div>
+            </div>
+            <div style={{ marginLeft: "3rem" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "10px",
+                  padding: "1rem",
+                }}
+              >
+                <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
+                <Link
+                  href={`/knowledgebase/1`}
+                  style={{
+                    fontSize: "1.5rem",
+                    height: "0rem",
+                    color: "#2c5cc5",
+                    cursor: "pointer",
+                  }}
+                >
+                  Catalogue
+                </Link>
               </div>
             </div>
           </div>
@@ -520,15 +550,17 @@ const KnowledgeBasedListArea = () => {
                 }}
               >
                 <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
-                <p
+                <Link
+                  href={`/knowledgebase/1`}
                   style={{
                     fontSize: "1.5rem",
                     height: "0rem",
                     color: "#2c5cc5",
+                    cursor: "pointer",
                   }}
                 >
                   Catalogue
-                </p>
+                </Link>
               </div>
             </div>
             <div style={{ marginLeft: "3rem" }}>
@@ -542,15 +574,17 @@ const KnowledgeBasedListArea = () => {
                 }}
               >
                 <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
-                <p
+                <Link
+                  href={`/knowledgebase/1`}
                   style={{
                     fontSize: "1.5rem",
                     height: "0rem",
                     color: "#2c5cc5",
+                    cursor: "pointer",
                   }}
                 >
                   Catalogue
-                </p>
+                </Link>
               </div>
             </div>
             <div style={{ marginLeft: "3rem" }}>
@@ -564,15 +598,17 @@ const KnowledgeBasedListArea = () => {
                 }}
               >
                 <FaRegFileAlt style={{ height: "20px", width: "20px" }} />
-                <p
+                <Link
+                  href={`/knowledgebase/1`}
                   style={{
                     fontSize: "1.5rem",
                     height: "0rem",
                     color: "#2c5cc5",
+                    cursor: "pointer",
                   }}
                 >
                   Catalogue
-                </p>
+                </Link>
               </div>
             </div>
           </div>
