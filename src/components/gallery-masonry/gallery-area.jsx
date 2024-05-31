@@ -42,8 +42,7 @@ const GalleryArea = () => {
                     <div
                       key={i}
                       onClick={() => handleImagePopup(i)}
-                      className="edu-popup-image edu-gallery-grid w-100 masonry-item"
-                      style={{ cursor: "pointer" }}
+                      className="edu-popup-image edu-gallery-grid w-100 masonry-item cursor-pointer"
                     >
                       <div className="thumbnail">
                         <img className="w-100" src={img} alt="Gallery Image" />

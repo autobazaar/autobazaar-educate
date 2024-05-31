@@ -28,9 +28,9 @@ const ListArea = () => {
                       <Link href={`/blog-details/${id}`}>
                         <a>
                           <img
-                            style={{ width: "300px" }}
                             src={img}
-                            alt="Blog Images"
+                            alt="Blog Images img-width-300"
+                            style={{ width: "300px" }}
                           />
                         </a>
                       </Link>
@@ -53,13 +53,7 @@ const ListArea = () => {
                       <p>{desc}</p>
                       <div className="read-more-btn">
                         <Link href={`/blog-details/${id}`}>
-                          <a
-                            className="edu-btn btn-border btn-medium"
-                            style={{
-                              backgroundColor: "#FFA51F",
-                              color: "#111",
-                            }}
-                          >
+                          <a className="edu-btn btn-border btn-medium custom-style-bg">
                             Learn More <i className="icon-4"></i>
                           </a>
                         </Link>

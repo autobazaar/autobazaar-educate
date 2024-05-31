@@ -7,72 +7,41 @@ const BreadCrumbSeven = ({ title, subtitle }) => {
   const { mouseDirection, mouseReverse } = useMouseMoveUI();
   return (
     <div
-      className="edu-breadcrumb-area"
+      className="edu-breadcrumb-area d-flex align-items-center justify-content-center position-relative"
       style={{
         height: "90vh",
-        display: "grid",
-        placeItems: "center",
-        position: "relative",
       }}
     >
       {/* Background Image */}
-      <div
-        className="background-image"
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100vh",
-          zIndex: 0,
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1572061486195-d811e12d0a10?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", // Add your background image URL here
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      ></div>
+      <div className="background-image my-background"></div>
 
       {/* Overlay */}
-      <div
-        className="overlay"
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100vh",
-          backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent black color
-          zIndex: 1, // Ensure it's above other elements
-        }}
-      ></div>
+      <div className="overlay my-overlay"></div>
 
       <div className="container" style={{ zIndex: 999 }}>
         <div className="breadcrumb-inner">
           <div className="page-title">
-            <h1 style={{ color: "#FFFFFF" }} className="title">
-              {title}
-            </h1>
+            <h1 className="title text-white">{title}</h1>
           </div>
           <ul className="edu-breadcrumb">
             <li className="breadcrumb-item">
               <Link href="/">
-                <a style={{ color: "#FFFFFF" }}>Home</a>
+                <a className="text-white">Home</a>
               </Link>
             </li>
             <li className="separator">
-              <i style={{ color: "#FFFFFF" }} className="icon-angle-right"></i>
+              <i className="text-white icon-angle-right"></i>
             </li>
             <li className="breadcrumb-item">
-              <a style={{ color: "#FFFFFF" }} href="#">
+              <a className="text-white" href="#">
                 Pages
               </a>
             </li>
             <li className="separator">
-              <i style={{ color: "#FFFFFF" }} className="icon-angle-right"></i>
+              <i className="text-white icon-angle-right"></i>
             </li>
             <li
-              style={{ color: "#FFFFFF" }}
-              className="breadcrumb-item active"
+              className="breadcrumb-item active text-white"
               aria-current="page"
             >
               {subtitle}
@@ -116,12 +85,7 @@ const BreadCrumbSeven = ({ title, subtitle }) => {
         </motion.li>
       </ul>
       <img
-        style={{
-          position: "absolute",
-          bottom: "-10.2rem",
-          zIndex: "999",
-        }}
-        className="rotateit"
+        className="rotateit position-absolute bottom-0 mb-neg-10 z-index-999"
         src="/assets/images/about/shape-44.png"
         alt="Shape"
         width={200}

@@ -62,10 +62,7 @@ const AdBanner = () => {
                   AutoBazaar{" "}
                 </h2>
                 <Link href="/">
-                  <a
-                    className="edu-btn btn-secondary"
-                    style={{ backgroundColor: "#ffa51f", color: "#111" }}
-                  >
+                  <a className="edu-btn btn-secondary custom-style-bg ">
                     Get started now{" "}
                     <i className="icon-4" style={{ color: "#111" }}></i>
                   </a>

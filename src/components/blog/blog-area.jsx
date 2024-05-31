@@ -59,8 +59,7 @@ const BlogArea = () => {
                         {video && (
                           <button
                             onClick={() => setIsVideoOpen(true)}
-                            style={{ border: "none" }}
-                            className="video-play-btn video-popup-activation"
+                            className="video-play-btn video-popup-activation border-0"
                           >
                             <i className="icon-18"></i>
                           </button>
@@ -94,16 +93,10 @@ const BlogArea = () => {
                             ))}
 
                             <div className="swiper-navigation">
-                              <div
-                                className="swiper-btn-nxt"
-                                style={{ cursor: "pointer" }}
-                              >
+                              <div className="swiper-btn-nxt cursor-pointer">
                                 <i className="icon-west"></i>
                               </div>
-                              <div
-                                className="swiper-btn-prv"
-                                style={{ cursor: "pointer" }}
-                              >
+                              <div className="swiper-btn-prv cursor-pointer">
                                 <i className="icon-east"></i>
                               </div>
                             </div>
@@ -134,13 +127,7 @@ const BlogArea = () => {
                         <p>{desc}</p>
                         <div className="read-more-btn">
                           <Link href={`/blog-details/${id}`}>
-                            <a
-                              className="edu-btn btn-border btn-medium"
-                              style={{
-                                backgroundColor: "#FFA51F",
-                                color: "#111",
-                              }}
-                            >
+                            <a className="edu-btn btn-border btn-medium custom-style-bg">
                               Learn More <i className="icon-4"></i>
                             </a>
                           </Link>

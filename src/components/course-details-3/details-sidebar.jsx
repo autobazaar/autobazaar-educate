@@ -57,10 +57,7 @@ const DetailsSidebar = () => {
 
             <div className="read-more-btn">
               <Link href="/">
-                <a
-                  className="edu-btn btn-medium btn-curved"
-                  style={{ backgroundColor: "#ffa51f", color: "#111" }}
-                >
+                <a className="edu-btn btn-medium btn-curved custom-style-bg">
                   Get Started{" "}
                   <i
                     className="icon-4"

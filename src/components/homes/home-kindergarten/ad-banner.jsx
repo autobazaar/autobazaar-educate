@@ -27,9 +27,8 @@ const AdBanner = () => {
                       placeholder="Get started now"
                     />
                     <button
-                      className="edu-btn btn-curved"
+                      className="edu-btn btn-curved custom-style-bg"
                       type="button"
-                      style={{ backgroundColor: "#ffa51f", color: "#111" }}
                     >
                       Subscribe <i className="icon-4"></i>
                     </button>

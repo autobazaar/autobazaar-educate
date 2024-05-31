@@ -154,14 +154,7 @@ const AboutArea = () => {
                 data-sal="slide-up"
                 data-sal-duration="1000"
               >
-                <a
-                  href="#"
-                  className="edu-btn"
-                  style={{
-                    backgroundColor: "#FFA51F",
-                    color: "#111",
-                  }}
-                >
+                <a href="#" className="edu-btn custom-style-bg ">
                   Learn more <i className="icon-4"></i>
                 </a>
               </div>

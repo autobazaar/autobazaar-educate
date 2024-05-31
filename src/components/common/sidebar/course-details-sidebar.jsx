@@ -32,8 +32,7 @@ const CourseDetailsSidebar = ({ course, details_2 = false }) => {
               />
               <a
                 onClick={() => setIsVideoOpen(true)}
-                style={{ cursor: "pointer" }}
-                className="play-btn video-popup-activation"
+                className="cursor-pointer play-btn video-popup-activation"
               >
                 <i className="icon-18"></i>
               </a>
@@ -94,10 +93,7 @@ const CourseDetailsSidebar = ({ course, details_2 = false }) => {
 
               <div className="read-more-btn">
                 <Link href="/contact-us">
-                  <a
-                    className="edu-btn btn-medium btn-curved"
-                    style={{ backgroundColor: "#ffa51f", color: "#111" }}
-                  >
+                  <a className="edu-btn btn-medium btn-curved custom-style-bg">
                     Get Started{" "}
                     <i
                       className="icon-4"

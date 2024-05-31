@@ -35,12 +35,9 @@ const BrandArea = () => {
           <div className="col-lg-7">
             <div
               style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
                 gap: 80,
-                flexWrap: "wrap",
               }}
+              className="d-flex align-items-center justify-content-center gap-5 flex-wrap"
             >
               <img
                 style={{ width: "250px" }}

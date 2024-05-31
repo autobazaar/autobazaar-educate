@@ -35,13 +35,7 @@ const EventListItem = ({ item }) => {
         <p>{sm_desc}</p>
         <div className="read-more-btn">
           <Link href={`/event-details/${id}`}>
-            <a
-              className="edu-btn btn-medium btn-border"
-              style={{
-                backgroundColor: "#FFA51F",
-                color: "#111",
-              }}
-            >
+            <a className="edu-btn btn-medium btn-border custom-style-bg ">
               Learn More <i className="icon-4"></i>
             </a>
           </Link>

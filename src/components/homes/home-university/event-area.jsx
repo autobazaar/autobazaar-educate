@@ -55,9 +55,15 @@ const EventArea = ({ event_2 }) => {
           <h6 className="view-text">
             For Latest Events from AutoBazaar.
             <Link href="/">
-              <a className="btn-transparent" style={{ color: "#FFA51F" }}>
+              <a
+                className="btn-transparent custom-color"
+                style={{ color: "#FFA51F" }}
+              >
                 Be in Touch{" "}
-                <i className="icon-4 " style={{ color: "#FFA51F" }}></i>
+                <i
+                  className="icon-4 custom-color"
+                  style={{ color: "#FFA51F" }}
+                ></i>
               </a>
             </Link>
           </h6>
@@ -71,12 +77,7 @@ const EventArea = ({ event_2 }) => {
             data-sal-duration="200"
           >
             <img
-              style={{
-                position: "relative",
-                left: "1.85rem",
-                top: "1.5rem",
-              }}
-              className="rotateit"
+              className="rotateit position-relative left-3 top-3"
               src="/assets/images/about/shape-44.png"
               alt="Shape"
               width={150}

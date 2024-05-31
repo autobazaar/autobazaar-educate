@@ -37,13 +37,7 @@ const EventItem = ({ item }) => {
         </ul>
         <div className="read-more-btn">
           <Link href={`/event-details/${id}`}>
-            <a
-              className="edu-btn btn-small btn-secondary"
-              style={{
-                backgroundColor: "#FFA51F",
-                color: "#111",
-              }}
-            >
+            <a className="edu-btn btn-small btn-secondary custom-style-bg ">
               Learn More <i className="icon-4"></i>
             </a>
           </Link>

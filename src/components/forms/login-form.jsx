@@ -70,11 +70,7 @@ const LoginForm = () => {
       </div>
 
       <div className="form-group">
-        <button
-          type="submit"
-          className="edu-btn btn-medium"
-          style={{ backgroundColor: "#FFA51F", color: "#111" }}
-        >
+        <button type="submit" className="edu-btn btn-medium custom-style-bg">
           Sign in <i className="icon-4"></i>
         </button>
       </div>

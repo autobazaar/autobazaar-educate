@@ -69,11 +69,7 @@ const BlogCommentForm = () => {
           </div>
         </div>
         <div className="form-group col-12">
-          <button
-            type="submit"
-            className="edu-btn submit-btn"
-            style={{ backgroundColor: "#ffa51f", color: "#111" }}
-          >
+          <button type="submit" className="edu-btn submit-btn custom-style-bg">
             Send Message <i className="icon-4" style={{ color: "#111" }}></i>
           </button>
         </div>

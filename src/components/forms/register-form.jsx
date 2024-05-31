@@ -88,11 +88,7 @@ const RegisterForm = () => {
       {touched.terms && <ErrorMsg error={errors.terms?.split("true,")[1]} />}
 
       <div className="form-group">
-        <button
-          type="submit"
-          className="edu-btn btn-medium"
-          style={{ backgroundColor: "#FFA51F", color: "#111" }}
-        >
+        <button type="submit" className="edu-btn btn-medium custom-style-bg">
           Create Account <i className="icon-4"></i>
         </button>
       </div>

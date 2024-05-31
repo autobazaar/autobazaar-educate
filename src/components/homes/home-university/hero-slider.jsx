@@ -40,66 +40,23 @@ const HeroSlider = () => {
   const { mouseDirection, mouseReverse } = useMouseMoveUI();
 
   return (
-    <div
-      style={{
-        position: "relative",
-      }}
-    >
+    <div className="position-relative">
       {" "}
-      <div
-        style={{
-          position: "absolute",
-          top: "2rem",
-          left: "3rem",
-          zIndex: "9999",
-          color: "white",
-          textDecoration: "none" /* Remove default text underline */,
-        }}
-      >
-        <h6 style={{ position: "relative", color: "white" }}>
+      <div className="position-absolute top-8 start-24 text-white text-decoration-none">
+        <h6 className="position-relative text-white">
           Home {">"} Blog
-          <span
-            style={{
-              position: "absolute",
-              bottom:
-                "-3px" /* Adjust this value to change the distance of the underline from the text */,
-              left: "0",
-              width: "100%",
-              height:
-                "2px" /* Adjust this value to change the thickness of the underline */,
-              backgroundColor:
-                "white" /* Change this to set the color of the underline */,
-            }}
-          ></span>
+          <span className="position-absolute bottom-0 start-0 w-100 custom-line-h"></span>
         </h6>
       </div>
       <SwiperSlide>
         <img
-          style={{ height: "70rem", width: "100%", objectFit: "cover" }}
           data-transform-origin="center center"
           src="https://d3nn873nee648n.cloudfront.net/900x600/20487/1-PA1049848.jpg"
-          className="swiper-lazy"
+          className="swiper-lazy custom-image-s"
           alt="image"
         />
 
-        <div
-          className="thumbnail-bg-content"
-          style={{
-            position: "absolute",
-            bottom: "7rem",
-            right: "4rem",
-            backgroundColor: "",
-            height: "50%",
-            width: "50rem",
-            padding: "2rem",
-            borderRadius: "30px",
-            backgroundImage: "url('your-background-image.jpg')",
-            backdropFilter: "blur(10px)",
-            WebkitBackdropFilter: "blur(10px)",
-            backgroundColor: "rgba(255, 255, 255, 0.5)",
-            animation: "floatAnimation 3s infinite alternate",
-          }}
-        >
+        <div className="thumbnail-bg-content custom-container-thumb">
           <style jsx>{`
             @keyframes floatAnimation {
               from {
@@ -123,16 +80,8 @@ const HeroSlider = () => {
                   <div className="banner-btn">
                     <Link href="/blog-details">
                       <a
-                        className="edu-btn btn-secondary"
-                        style={{
-                          backgroundColor: "#FFA51F",
-                          color: "#111",
-                          height: "50px",
-                          width: "170px",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                        }}
+                        className="edu-btn btn-secondary custom-button-e"
+                        style={{ backgroundColor: "#FFA51F" }}
                       >
                         Read More <i className="icon-4"></i>
                       </a>

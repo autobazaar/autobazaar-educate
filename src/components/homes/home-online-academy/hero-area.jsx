@@ -69,15 +69,7 @@ const HeroArea = () => {
         />
 
         <img
-          style={{
-            position: "relative",
-            bottom: "10.2rem",
-            left: "55rem",
-            height: "110px",
-            width: "110px",
-            zIndex: "-1",
-          }}
-          className="rotateit"
+          className="position-relative mt-n5 custom-img rotateit"
           src="/assets/images/about/shape-44.png"
           alt="Shape"
         />

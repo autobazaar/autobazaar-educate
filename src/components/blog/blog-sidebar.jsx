@@ -103,17 +103,8 @@ const BlogSidebar = () => {
           </span>
           <p>Nostrud exer ciation laboris aliqup</p>
 
-          <a
-            className="edu-btn btn-medium btn-curved"
-            style={{ backgroundColor: "#ffa51f", color: "#111" }}
-          >
-            Get Started{" "}
-            <i
-              className="icon-4"
-              style={{
-                color: "#111",
-              }}
-            ></i>
+          <a className="edu-btn btn-medium btn-curved custom-style-bg">
+            Get Started <i className="icon-4 text-dark"></i>
           </a>
         </div>
       </div>

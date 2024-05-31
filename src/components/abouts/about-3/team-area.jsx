@@ -14,7 +14,7 @@ const TeamArea = () => {
         >
           <span className="pre-title">Instructors</span>
           <h2 className="title">Course Instructors</h2>
-          <span className="shape-line" style={{ color: "#FFA51F" }}>
+          <span className="shape-line custom-color">
             <i className="icon-19"></i>
           </span>
         </div>

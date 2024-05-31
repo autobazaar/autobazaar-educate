@@ -158,8 +158,7 @@ const CourseTypeOne = ({ data, classes, image_location_path = "01" }) => {
           </ul>
           <a
             onClick={() => handleAddToCart(data)}
-            className="edu-btn btn-secondary btn-small"
-            style={{ cursor: "pointer" }}
+            className="edu-btn btn-secondary btn-small cursor-pointer"
           >
             {cartCourses.some((item) => item.id === data.id)
               ? "Added to cart"

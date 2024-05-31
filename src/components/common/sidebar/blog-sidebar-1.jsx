@@ -83,10 +83,7 @@ const SidebarOne = () => {
           </span>
           <p>Nostrud exer ciation laboris aliqup</p>
           <Link href="/">
-            <a
-              className="edu-btn btn-medium btn-curved"
-              style={{ backgroundColor: "#ffa51f", color: "#111" }}
-            >
+            <a className="edu-btn btn-medium btn-curved custom-style-bg">
               Get Started{" "}
               <i
                 className="icon-4"

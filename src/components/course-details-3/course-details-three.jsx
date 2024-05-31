@@ -43,8 +43,7 @@ const CourseDetailsThree = () => {
                     />
                     <a
                       onClick={() => setIsVideoOpen(true)}
-                      style={{ cursor: "pointer" }}
-                      className="video-play-btn video-popup-activation"
+                      className="cursor-pointer video-play-btn video-popup-activation"
                     >
                       <i className="icon-18"></i>
                     </a>
@@ -64,8 +63,7 @@ const CourseDetailsThree = () => {
                     <h6 className="title">Get Started</h6>
                     <a
                       href="#"
-                      className="edu-btn btn-medium enroll-btn"
-                      style={{ backgroundColor: "#ffa51f", color: "#111" }}
+                      className="edu-btn btn-medium enroll-btn custom-style-bg"
                     >
                       Take This Course
                     </a>
@@ -183,13 +181,7 @@ const CourseDetailsThree = () => {
                           <div className="heading-title">
                             <h3 className="title">Course Content</h3>
                             <div className="expand-btn">
-                              <button
-                                className="edu-btn btn-medium"
-                                style={{
-                                  backgroundColor: "#FFA51F",
-                                  color: "#111",
-                                }}
-                              >
+                              <button className="edu-btn btn-medium custom-style-bg">
                                 Expand All <i className="icon-31"></i>
                               </button>
                             </div>

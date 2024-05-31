@@ -90,11 +90,7 @@ const EventDetailsArea = ({ event }) => {
                         </li>
                       </ul>
                       <div className="read-more-btn">
-                        <a
-                          href="#"
-                          className="edu-btn"
-                          style={{ backgroundColor: "#FFA51F", color: "#111" }}
-                        >
+                        <a href="#" className="edu-btn custom-style-bg ">
                           Book Now <i className="icon-4"></i>
                         </a>
                       </div>

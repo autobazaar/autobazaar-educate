@@ -73,11 +73,7 @@ const GalleryArea = () => {
               >
                 <div className="row g-5">
                   {items.map((item, i) => (
-                    <div
-                      key={i}
-                      className="col-lg-4 col-md-6"
-                      style={{ cursor: "pointer" }}
-                    >
+                    <div key={i} className="col-lg-4 col-md-6 cursor-pointer">
                       <div
                         onClick={() => handleImagePopup(i)}
                         className="edu-popup-image edu-gallery-grid w-100"

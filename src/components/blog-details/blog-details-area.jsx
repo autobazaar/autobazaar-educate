@@ -163,9 +163,8 @@ const BlogDetailsArea = ({ blog }) => {
             <div className="blog-author">
               <div className="thumbnail">
                 <img
-                  style={{ width: "300px" }}
                   src="https://edgecast-img.yahoo.net/mysterio/api/D7009424E23BD1A77B75277F45EE1195CA474F328B64C72BE2F648C61187B99E/autoblog/resizefill_w1200_h675;quality_85;format_webp;cc_31536000;/https://s.aolcdn.com/images/dims3/GLOB/legacy_thumbnail/1062x597/format/jpg/quality/100/https://s.aolcdn.com/os/ab/_cms/2024/04/17160136/2025-Toyota-Camry-SE-action-front-three-quarter.jpg"
-                  alt="Author Images"
+                  alt="Author Images img-width-300"
                 />
               </div>
               <div className="author-content">

@@ -26,7 +26,7 @@ const CTA = () => {
                   placeholder="Your email"
                 />
                 <button
-                  className="edu-btn btn-medium text-dark"
+                  className="edu-btn btn-medium text-dark "
                   type="button"
                   style={{ backgroundColor: "#ffa51f" }}
                 >

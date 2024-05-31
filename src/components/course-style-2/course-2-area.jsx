@@ -38,14 +38,7 @@ const CourseTwoArea = () => {
             data-sal="slide-up"
             data-sal-duration="1200"
           >
-            <a
-              className="edu-btn"
-              style={{
-                cursor: "pointer",
-                backgroundColor: "#FFA51F",
-                color: "#111",
-              }}
-            >
+            <a className="edu-btn custom-style-bg cursor-pointer">
               Load More <i className="icon-56"></i>
             </a>
           </div>

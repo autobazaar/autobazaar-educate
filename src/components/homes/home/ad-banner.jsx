@@ -21,10 +21,7 @@ const AdBanner = () => {
                   <span className="color-secondary">Educate</span>
                 </h2>
                 <Link href="/">
-                  <a
-                    className="edu-btn"
-                    style={{ backgroundColor: "#ffa51f", color: "#111" }}
-                  >
+                  <a className="edu-btn custom-style-bg">
                     Get started now{" "}
                     <i className="icon-4" style={{ color: "#111" }}></i>
                   </a>
