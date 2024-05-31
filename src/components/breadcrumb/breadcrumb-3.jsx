@@ -16,30 +16,27 @@ const BreadcrumbThree = ({ title, subtitle }) => {
       <div className="container" style={{ zIndex: 999 }}>
         <div className="breadcrumb-inner">
           <div className="page-title">
-            <h1 style={{ color: "#FFFFFF" }} className="title">
-              {title}
-            </h1>
+            <h1 className="title text-white">{title}</h1>
           </div>
           <ul className="edu-breadcrumb">
             <li className="breadcrumb-item">
               <Link href="/">
-                <a style={{ color: "#FFFFFF" }}>Home</a>
+                <a className="text-white">Home</a>
               </Link>
             </li>
             <li className="separator">
-              <i style={{ color: "#FFFFFF" }} className="icon-angle-right"></i>
+              <i className="icon-angle-right text-white"></i>
             </li>
             <li className="breadcrumb-item">
-              <a style={{ color: "#FFFFFF" }} href="#">
+              <a className="text-white" href="#">
                 Pages
               </a>
             </li>
             <li className="separator">
-              <i style={{ color: "#FFFFFF" }} className="icon-angle-right"></i>
+              <i className="icon-angle-right text-white"></i>
             </li>
             <li
-              style={{ color: "#FFFFFF" }}
-              className="breadcrumb-item active"
+              className="breadcrumb-item active text-white"
               aria-current="page"
             >
               {subtitle}
