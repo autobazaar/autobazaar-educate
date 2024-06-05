@@ -1,10 +1,28 @@
+'use client'
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { blog_data } from "../../data";
+import { fetchAllLatestBlogs } from "../../utils/funcs/api_func/blog";
+import { FILE_BASE_URL } from "../../utils/constant";
+import dayjs from "dayjs";
 
 const latest_blog = blog_data.slice(0, 3);
 
-const BlogSidebar = () => {
+const BlogSidebar = () => { 
+  const [blogData, setBlogData] = useState([])
+
+const fetchData =async()=>{
+  const res = await fetchAllLatestBlogs();
+
+  if(res?.status === 'success'){
+    setBlogData(res?.data?.result)
+  }
+}
+
+useEffect(() => {
+  fetchData()
+}, [])
+console.log('blogData', blogData)
   return (
     <div className="edu-blog-sidebar">
       <div className="edu-blog-widget widget-search">
@@ -25,25 +43,25 @@ const BlogSidebar = () => {
         <div className="inner">
           <h4 className="widget-title">Latest Post</h4>
           <div className="content latest-post-list">
-            {latest_blog.map((blog) => (
-              <div key={blog.id} className="latest-post">
+            {blogData.map((blog) => (
+              <div key={blog?.id} className="latest-post">
                 <div className="thumbnail">
-                  <Link href={`/blog-details/${blog.id}`}>
+                  <Link href={`/blog-details/${blog?.id}`}>
                     <a>
-                      <img src={blog.img} alt="Blog Images" />
+                      <img   src={`${FILE_BASE_URL}/${blog?.image}`} alt="Blog Images" />
                     </a>
                   </Link>
                 </div>
                 <div className="post-content">
                   <h6 className="title">
-                    <Link href={`/blog-details/${blog.id}`}>
-                      <a>{blog.title.substring(0, 25)}...</a>
+                    <Link href={`/blog-details/${blog?.id}`}>
+                      <a>{blog?.title.substring(0, 25)}...</a>
                     </Link>
                   </h6>
                   <ul className="blog-meta">
                     <li>
                       <i className="icon-27"></i>
-                      {blog.date}
+                      {dayjs(blog?.created_at).format('MMM DD YYYY')}
                     </li>
                   </ul>
                 </div>

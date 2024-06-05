@@ -1,9 +1,32 @@
-import React from "react";
+'use client'
+import React, { useEffect, useState } from "react";
 import BlogSidebar from "../blog/blog-sidebar";
 import BlogCommentForm from "../forms/blog-comment-form";
 import CommentArea from "./comment-area";
+import { fetchBlogByPublicId } from "../../utils/funcs/api_func/blog";
+import { useRouter } from "next/router";
+import dayjs from "dayjs";
+import { FILE_BASE_URL } from "../../utils/constant";
 
 const BlogDetailsArea = ({ blog }) => {
+  const router = useRouter();
+  const { id } = router.query;
+  const [blogData, setBlogData] = useState({})
+  console.log('blogData', blogData,id)
+  const fetchData =async()=>{
+    const res = await fetchBlogByPublicId(id);
+
+    if(res?.status === 'success'){
+      setBlogData(res?.data)
+    }
+  }
+
+  useEffect(() => {
+    fetchData()
+  }, [id])
+
+  const {title, created_at, image, description} = blogData;
+
   return (
     <div className="blog-details-area section-gap-equal">
       <div className="container">
@@ -12,11 +35,11 @@ const BlogDetailsArea = ({ blog }) => {
             <div className="blog-details-content">
               <div className="entry-content">
                 <span className="category">Developer</span>
-                <h3 className="title">{blog?.title}</h3>
+                <h3 className="title">{title}</h3>
                 <ul className="blog-meta">
                   <li>
                     <i className="icon-27"></i>
-                    {blog?.date}
+                    {dayjs(created_at).format('MMM DD YYYY')}
                   </li>
                   <li>
                     <i className="icon-28"></i>Com {blog?.comment}
@@ -24,13 +47,15 @@ const BlogDetailsArea = ({ blog }) => {
                 </ul>
                 <div className="thumbnail">
                   <img
-                    src="https://edgecast-img.yahoo.net/mysterio/api/D7009424E23BD1A77B75277F45EE1195CA474F328B64C72BE2F648C61187B99E/autoblog/resizefill_w1200_h675;quality_85;format_webp;cc_31536000;/https://s.aolcdn.com/images/dims3/GLOB/legacy_thumbnail/1062x597/format/jpg/quality/100/https://s.aolcdn.com/os/ab/_cms/2024/04/17160136/2025-Toyota-Camry-SE-action-front-three-quarter.jpg"
+                     src={`${FILE_BASE_URL}/${image}`}
+                    // src="https://edgecast-img.yahoo.net/mysterio/api/D7009424E23BD1A77B75277F45EE1195CA474F328B64C72BE2F648C61187B99E/autoblog/resizefill_w1200_h675;quality_85;format_webp;cc_31536000;/https://s.aolcdn.com/images/dims3/GLOB/legacy_thumbnail/1062x597/format/jpg/quality/100/https://s.aolcdn.com/os/ab/_cms/2024/04/17160136/2025-Toyota-Camry-SE-action-front-three-quarter.jpg"
                     alt="Blog Image"
                   />
                 </div>
               </div>
+              <p>{description}</p>
 
-              <p>
+              {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor inc idid unt ut labore et dolore magna aliqua
                 enim ad minim veniam, quis nostrud exerec tation ullamco laboris
@@ -51,7 +76,7 @@ const BlogDetailsArea = ({ blog }) => {
                 <li>Aute irure dolor in reprehenderit</li>
                 <li>Occaecat cupidatat non proident sunt in culpa</li>
                 <li>Pariatur enim ipsam.</li>
-              </ul>
+              </ul> */}
 
               <blockquote>
                 <p>
